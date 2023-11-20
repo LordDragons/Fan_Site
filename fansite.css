@@ -1,0 +1,266 @@
+header {
+    background-image: url(images/feu.jpg);
+    background-size: cover;
+    height: 30vh;
+    width: 100vw;
+    background-position: center;
+    font-family: Papyrus, serif;
+    font-size: 3vw;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+body {
+    background-color: black;
+    font-family: Brush Script MT, serif;
+    color: white;
+}
+
+h2 {
+    font-size: 4vw;
+    text-decoration: underline;
+    margin: unset;
+}
+
+p {
+    font-size: 2vw;
+    display: inline-block;
+}
+
+.what img {
+    width: 48vw;
+}
+
+section {
+    padding-top: 1vw;
+}
+
+a {
+    text-decoration: none;
+    color: gold;
+}
+
+h1:link {
+    color: gold;
+}
+
+h1:visited {
+    color: gold;
+}
+
+h1:focus {
+    color: gold;
+}
+
+h1:active {
+    color: gold;
+}
+
+.what {
+    display: inline-block;
+    width: 48vw;
+    vertical-align: top;
+}
+
+
+ol,
+ul {
+    font-size: xx-large;
+}
+
+li {
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 3vw;
+    text-decoration: underline;
+    text-align: center;
+    margin: 0;
+    padding: 10;
+}
+
+h4 {
+    font-size: 2vw;
+}
+
+.photos:hover {
+    background-size: cover;
+    max-width: 80vw;
+    height: 35vw;
+    position: relative;
+    background-position: center;
+}
+
+.drag1:hover {
+    background-image: url(images/chinois.jpg);
+}
+
+.drag2:hover {
+    background-image: url(images/dragon-occidental.jpeg);
+}
+
+.drag3:hover {
+    background-image: url(images/Wyvern.jpg);
+}
+
+.drag4:hover {
+    background-image: url(images/hydre.jpg);
+}
+
+.drag5:hover {
+    background-image: url(images/japonais.jpg);
+}
+
+.drag6:hover {
+    background-image: url(images/druk.jpg);
+}
+
+.drag7:hover {
+    background-image: url(images/africain.jpg);
+}
+
+.drag8:hover {
+    background-image: url(images/gaasyendietha..jpeg);
+}
+
+.drag9:hover {
+    background-image: url(images/quetzalcoatl.jpeg);
+}
+
+.drag10:hover {
+    background-image: url(images/vishap.jpeg);
+}
+
+.dragon-litterature {
+    display: flex;
+    justify-content: center;
+}
+
+.dragon-cinema-titre {
+    font-size: 2vw;
+}
+
+.dragon-cinema-image {
+    display: flex;
+    margin: 2vw;
+    justify-content: space-around
+}
+
+.dragon-cinema-image img {
+    width: 40vw;
+    height: 20vw;
+}
+
+.autres-jeux {
+    column-count: 4;
+    column-gap: 1em;
+}
+
+.dragon-histoire {
+    column-count: 2;
+    column-gap: 2em;
+    vertical-align: top;
+}
+
+.dragon-histoire img {
+    width: 40vw;
+    height: 30vw;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: gold;
+    
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+}
+
+/*galerie */
+
+.tour img {
+
+    border: 2vw solid goldenrod;
+    width: 27vw;
+    height: 20vw;
+    border-image: repeating-linear-gradient(30deg, gold, goldenrod, gold 20px) 60;
+}
+
+.galerie {
+    column-count: 3;
+    column-gap: 3vw;
+    justify-content: space-around;
+}
+
+/*lien reseau*/
+
+.reseau li {
+    display: inline-block;
+    margin-bottom: 1vw;
+    position: relative;
+
+}
+
+.reseau {
+    padding-left: 0;
+}
+
+.icon {
+    height: 4vw;
+    width: 4vw;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+
+}
