@@ -9,24 +9,9 @@
 </head>
 
 <body>
-    <header>
-        <h1><a href="index.html">Les Dragons</a></h1>
-        <nav class="navbar">
-            <ul class="nav-list">
-                <li><a href="sortOfDragons.html">10 types de Dragons</a></li>
-                <li><a href="colorOfDragons.html">Les Couleurs des Dragons</a></li>
-                <li><a href="dragonsDansLart.html">Les Dragons Dans L'art</a></li>
-                <li><a href="dragonsDansHistoire.html">Evénéments</a></li>
-                <li><a href="célébrations.html">Actualités</a></li>
-                <li><a href="galerie.html">Galerie</a></li>
-            </ul>
-            <div class="burger-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </nav>
-    </header>
+    <?php
+    include_once 'header.php'
+    ?>
     <h2>Les dragons : quand l'imagination tutoie le réel</h2>
     <p>
         Si tu entends parler de dragons depuis ta plus tendre enfance… c'est parce qu'ils occupent une place capitale
@@ -48,13 +33,13 @@
         dans les contes pour
         enfants...
         <br>
-        <br>
+        <br>f
         Mais quelles sont ces couleurs, justement ? Voici quelques exemples.
     </p>
     <h2>
         Quelques couleurs de dragons:
     </h2>
-    <h3>Le dragon vert : la créature médiévale fantastique par excellence !</h3>
+    <h3 id="vert">Le dragon vert : la créature médiévale fantastique par excellence !</h3>
     <div class="what">
         <p>
             Le dragon qui garde la tour du château et que le héros doit affronter avant de libérer sa princesse est très
@@ -75,7 +60,7 @@
     <div class="what">
         <img src="images/dragon-vert.jpeg" alt="Un Dragon Vert">
     </div>
-    <h3>Le dragon rouge : gare à sa colère !</h3>
+    <h3 id="rouge">Le dragon rouge : gare à sa colère !</h3>
     <div class="what">
         <p>
             Tu as sûrement déjà vu un dragon rouge en papier se faufiler entre les participants d'un défilé, pendant le
@@ -101,10 +86,9 @@
         </p>
     </div>
     <div class="what">
-        <img src="images/dragon-rouge.jpeg"
-            alt="Un Dragon Rouge dans les airs">
+        <img src="images/dragon-rouge.jpeg" alt="Un Dragon Rouge dans les airs">
     </div>
-    <h3>Les dragons métalliques (dorés, argentés…):</h3>
+    <h3 id="or">Les dragons métalliques (dorés, argentés…):</h3>
     <div class="what">
         <p>
             Tu vas peut-être te demander pourquoi nous insistons sur ce jeu… mais il faut reconnaître que Donjons et
@@ -126,10 +110,9 @@
         </p>
     </div>
     <div class="what">
-        <img src="images/dragon-d'or.jpg"
-            alt="Un Dragon D'or">
+        <img src="images/dragon-d'or.jpg" alt="Un Dragon D'or">
     </div>
-    <h3>Les dragons noirs :</h3>
+    <h3 id="noir">Les dragons noirs :</h3>
     <div class="what">
         <p>
             Les dragons noirs sont souvent synonymes de malheur, un peu comme les chats du même teint… Ils font régner
@@ -159,32 +142,28 @@
         spécimens qui méritent une mention :
     </p>
     <ul>
+
         <li>Le dragon violet:</li>
         <p>Notamment porté par le mignon Spyro. Si, si ! Un dragon peut être mignon, parfois.
             Il ne faut juste pas trop l'embêter.</p>
 
-        <li>Le dragon bleu:</li>
+        <li id="bleu">Le dragon bleu:</li>
         <p>Qui fait aussi partie de la famille chromatique dans Donjons et Dragons.</p>
+        <div class="what">
+            <img src="images/dragon-bleu.jpg" alt="Un dragon bleu">
+        </div>
 
-        <li>Le dragon blanc:</li>
+        <li id="blanc">Le dragon blanc:</li>
         <p>Opposé à son pendant noir dans Dragons 3 !</p>
+        <div class="what">
+            <img src="images/dragon-blanc.jpg" alt="Un dragon blanc">
+        </div>
+
     </ul>
 
-    <footer class="footer">
-        <ul class="reseau">
-            <li class="reseau"><a href="" title="Suivez sur Facebook"
-                    target="_blank"><img class="icon" src="imgreseau/facebook.jpg"><span aria-hidden="true"></span></a></li>
-            <li class="reseau"><a href="" title="Suivez sur Instagram"
-                    target="_blank"><img class="icon" src="imgreseau/OIP.jpg"><span aria-hidden="true"></span></a></li>
-            <li class="reseau"><a href="" title="Suivez sur LinkedIn"
-                    target="_blank"><img class="icon" src="imgreseau/linkedin.jpg"><span aria-hidden="true"></span></a></li>
-            <li class="reseau"><a href="" title="Suivez sur Twitter"
-                    target="_blank"><img class="icon" src="imgreseau/twitter.jpg"><span aria-hidden="true"></span></a></li>
-            <li class="reseau"><a href="" title="Suivez sur Youtube"
-                    target="_blank"><img class="icon" src="imgreseau/youtube.jpg"><span aria-hidden="true"></span></a></li>
-        </ul>
-
-    </footer>
+    <?php
+    include_once 'footer.php'
+    ?>
     <script src="fansite.js"></script>
 </body>
 
