@@ -95,10 +95,10 @@
             <a href="dragonsDansHistoire.php#georges"><img src="images/saint-georges.jpg" alt=""><a>
         </div>
         <div class="tour">
-            <a href="dragonsDansLart.php#anime"><img src="images/shenron.jpg" alt="Shenron le dragon de Dragon Ball"><a>
+            <a href="dragonsDansLart.php#anime"><img src="images/shenron.jpg" alt=""><a>
         </div>
         <div class="tour">
-            <a href="dragonsDansLart.php#smaug"><img src="images/smaug.jpg" alt="Le tériffiant Smaug du film le Hobbit"><a>
+            <a href="dragonsDansLart.php#smaug"><img src="images/smaug.jpg" alt=""><a>
         </div>
         <div class="tour">
             <a href="dragonsDansHistoire.php#tarasque"><img src="images/tarasque.jpg" alt=""><a>
