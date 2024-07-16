@@ -9,24 +9,9 @@
 </head>
 
 <body>
-    <header>
-        <h1><a href="index.html">Les Dragons</a></h1>
-        <nav class="navbar">
-            <ul class="nav-list">
-                <li><a href="sortOfDragons.html">10 types de Dragons</a></li>
-                <li><a href="colorOfDragons.html">Les Couleurs des Dragons</a></li>
-                <li><a href="dragonsDansLart.html">Les Dragons Dans L'art</a></li>
-                <li><a href="dragonsDansHistoire.html">Evénéments</a></li>
-                <li><a href="célébrations.html">Actualités</a></li>
-                <li><a href="galerie.html">Galerie</a></li>
-            </ul>
-            <div class="burger-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </nav>
-    </header>
+    <?php
+    include_once 'header.php'
+    ?>
     <h2>Le dragon dans l'art et la culture populaire:</h2>
     <p>Le dragon a été repris dans la littérature moderne et le cinéma, ainsi que dans les jeux de rôle (essentiellement
         ceux d'inspiration médiévale-fantastique).</p>
@@ -40,7 +25,7 @@
         Il est généralement le gardien d'un trésor caché dans une citadelle ou une grotte (voire d'une princesse dans
         les contes).
     </p>
-    <div class="dragon-litterature">
+    <div id="hsf" class="dragon-litterature">
         <img src="images/histoire-sans-fin.jpg">
     </div>
     <p>Cependant avec l'engouement du public pour les mangas et la culture asiatique, les dragons orientaux ont tendance
@@ -48,7 +33,7 @@
         L'Histoire sans fin, adapté en film par la suite, étonna les lecteurs occidentaux en montrant un sage dragon
         dénué d'ailes et possédant une gueule de lion dans le livre, et de chien dans le film.
     </p>
-    <h4>Univers de la Terre du Milieu:</h4>
+    <h4 id="smaug">Univers de la Terre du Milieu:</h4>
     <p>
         Dans l'univers de la Terre du Milieu de l'écrivain J. R. R. Tolkien, les dragons sont des créatures maléfiques
         nées des œuvres de Morgoth au cours du Premier Âge en Angband. Le premier d'entre eux, surnommé le « Père des
@@ -69,7 +54,7 @@
     <p>Le cinéma (et par extension tout support audiovisuel) est un vecteur important de l'imaginaire collectif moderne,
         et les dragons n'y font pas exception. Ils y apparaissent fréquemment, a fortiori depuis l'avènement des effets
         spéciaux élaborés et l'engouement du public pour les films fantastiques à grand budget.</p>
-    <div class="dragon-cinema-titre">
+    <div id="cinema" class="dragon-cinema-titre">
         <li>-Les Nibelungen (1924) de Fritz Lang :</li> Siegfried terrasse le dragon et devient invincible en se
         baignant dans son sang.
         <li>-Dragon du lac de feu (1981) :</li> l'abominable pacte conclu entre un roi et un dragon prêt à tout pour
@@ -99,7 +84,7 @@
         <img src="images/dragon-3.jpg">
     </div>
 
-    <h3>Dessin Animés:</h3>
+    <h3 id="anime">Dessin Animés:</h3>
     <p>Le Dessin Animé et le Manga ne sont pas en reste en ce qui concerne les dragons, il s'y apparaissent depuis 1929
         chez <a href="https://www.chroniquedisney.fr/perso/perso-dragons-disney.htm">Disney</a>. Ont les retrouvent
         aussi dans le dessin animé Donjons & Dragons, les mangas tels que Dragon Ball et Fairy tail.</p>
@@ -119,15 +104,14 @@
         Dans Donjons et Dragons, le dragon est l'une des figures les plus emblématiques de ce jeu de rôle, à la fois de
         par la puissance qu'il dégage et du développement de son histoire (un ouvrage entier, le Draconomicon, est
         consacré au dragon). Puissance parfois quasi-divine, les dragons participent souvent aux grands changements des
-        différents mondes constituant le multivers de Donjons et Dragons. Il existe trois types de dragons d'alignements
+        différents mondes constituant le multivers de Donjons et Dragons (ci-dessous : Tiamat Reine mére des dragons). Il existe trois types de dragons d'alignements
         différents, chromatiques (mauvais) et métalliques (bons) et les dragons de gemmes (neutres). Des dragons plus
         particuliers existent par ailleurs.
     </p>
     <div class="dragon-cinema-image">
         <img src="images/tiamat.jpg" alt="Tiamat Reine mére des dragons">
-        <img src="images/bahamut.jpg" alt="Bahamut dans FF7">
     </div>
-    <h4>Final Fantasy</h4>
+    <h4 id="ff7">Final Fantasy</h4>
     <p>
         Final Fantasy est connu pour de nombreuses créations uniques telles que Chocobo, Moogle et bien d'autres. L'une
         de leurs créations les plus appréciées sont les dragons.
@@ -135,7 +119,12 @@
         plus tôt ,où venus plus tard en ont modelé une partie. Un autre aspect récurrent de ces dragons est qu'ils sont
         souvent cachés dans le mystère.
     </p>
-    <h4>Monster Hunter</h4>
+    <div class="dragon-cinema-image">
+        <img src="images/bahamut.jpg" alt="Bahamut dans FF7">
+        <img src="images/bahamut2.jpg" alt="Néo Bahamut dans FF7">
+        <img src="images/bahamut3.jpg" alt="Bahamut Zéro dans FF7">
+    </div>
+    <h4 id="hunter">Monster Hunter</h4>
     <p>
         Dans Monster Hunter, des monstres fantastiques sont les principaux adversaires des chasseurs. Toutefois, ces
         monstres sont en grande majorité des wyvernes et non pas des dragons (pas de pattes antérieures) : Rathalos,
@@ -147,13 +136,15 @@
     </p>
     <div class="dragon-cinema-image">
         <img src="images/monster-hunter.jpg" alt="">
-        <img src="images/DragonBlancauxYeuxBleus.jpg" alt="Carte Dragon blanc aux yeux bleus">
     </div>
-    <h4>Yu-Gi-OH</h4>
+    <h4 id="yugioh">Yu-Gi-OH</h4>
     <p>
         Yu-Gi-Oh! reflète bien cela et est riche en dragons très puissants, les dragons se retrouvant dans la plupart
         des decks.
     </p>
+    <div class="dragon-cinema-image">
+        <img src="images/DragonBlancauxYeuxBleus.jpg" alt="Carte Dragon blanc aux yeux bleus">
+    </div>
     <h4>Autres jeux</h4>
     <section>
         <ul class="autres-jeux">
@@ -180,21 +171,9 @@
     </section>
     <script src="fansite.js"></script>
 
-    <footer class="footer">
-        <ul class="reseau">
-            <li class="reseau"><a href="" title="Suivez sur Facebook"
-                    target="_blank"><img class="icon" src="imgreseau/facebook.jpg"><span aria-hidden="true"></span></a></li>
-            <li class="reseau"><a href="" title="Suivez sur Instagram"
-                    target="_blank"><img class="icon" src="imgreseau/OIP.jpg"><span aria-hidden="true"></span></a></li>
-            <li class="reseau"><a href="" title="Suivez sur LinkedIn"
-                    target="_blank"><img class="icon" src="imgreseau/linkedin.jpg"><span aria-hidden="true"></span></a></li>
-            <li class="reseau"><a href="" title="Suivez sur Twitter"
-                    target="_blank"><img class="icon" src="imgreseau/twitter.jpg"><span aria-hidden="true"></span></a></li>
-            <li class="reseau"><a href="" title="Suivez sur Youtube"
-                    target="_blank"><img class="icon" src="imgreseau/youtube.jpg"><span aria-hidden="true"></span></a></li>
-        </ul>
-
-    </footer>
+    <?php
+    include_once 'footer.php'
+    ?>
 </body>
 
 

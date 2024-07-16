@@ -9,27 +9,12 @@
 </head>
 
 <body>
-    <header>
-        <h1><a href="index.html">Les Dragons</a></h1>
-        <nav class="navbar">
-            <ul class="nav-list">
-                <li><a href="sortOfDragons.html">10 types de Dragons</a></li>
-                <li><a href="colorOfDragons.html">Les Couleurs des Dragons</a></li>
-                <li><a href="dragonsDansLart.html">Les Dragons Dans L'art</a></li>
-                <li><a href="dragonsDansHistoire.html">Evénéments</a></li>
-                <li><a href="célébrations.html">Actualités</a></li>
-                <li><a href="galerie.html">Galerie</a></li>
-            </ul>
-            <div class="burger-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </nav>
-    </header>
+    <?php
+    include_once 'header.php'
+    ?>
     <h2>10 types de dragons</h2>
     <ol>
-        <li class="photos drag1">Le dragon chinois:</li>
+        <li id="chinois" class="photos drag1">Le dragon chinois:</li>
         <p>
             Lune des légendes les plus populaires sur l'origine du dragon chinois est la théorie du culte totémique qui
             stipule que les dragons sont apparus parce que lempereur jaune Huangdi était parti en guerre contre neuf
@@ -42,7 +27,7 @@
             naquirent les dragons chinois.
         </p>
 
-        <li class="photos drag2">Le dragon occidental:</li>
+        <li id="occidental" class="photos drag2">Le dragon occidental:</li>
         <p>
             Le dragon occidental est probablement celui qui vient en premier à l'esprit quand on pense aux dragons. Ils
             possèdent quatre pattes, de grandes ailes, une longue queue et parviennent à cracher du feu. Le dragon
@@ -59,7 +44,7 @@
             Alors que les dragons orientaux agissent comme des gardiens et symbolisent la prospérité et le pouvoir, les
             dragons occidentaux eux symbolisent la destruction, la mort et étaient souvent associés au Diable.
         </p>
-        <li class="photos drag3">La Wyvern:</li>
+        <li id="wyvern" class="photos drag3">La Wyvern:</li>
         <p>
             Originaire d'angleterre, la wyverne se distingue du dragon occidental standard par le fait qu'il est bipède,
             c'est-à-dire qu'il n'a que deux pattes au lieu de quatre. Ils sont généralement plus petits que les autres
@@ -69,7 +54,7 @@
             Pour certains, la Wyvern représente la protection, la force et la vaillance, mais peut aussi être un signe
             de vengeance.
         </p>
-        <li class="photos drag4">L'Hydre:</li>
+        <li id="hydre" class="photos drag4">L'Hydre:</li>
         <p>
             Le trait le plus notoire de l'Hydre est le fait que lorsqu'une tête est coupée, au moins une autre pousse à
             sa
@@ -93,7 +78,7 @@
             un
             rocher.
         </p>
-        <li class="photos drag5">Le dragon japonais:</li>
+        <li id="japonais" class="photos drag5">Le dragon japonais:</li>
         <p>
             Les dragons japonais sont des amalgames de dragons de la mythologie chinoise, indienne et coréenne, combinés
             au
@@ -117,7 +102,7 @@
             divers
             contes, aidant parfois les protagonistes, mais devenant aussi occasionnellement un obstacle.
         </p>
-        <li class="photos drag6">Le Druk:</li>
+        <li id="drug" class="photos drag6">Le Druk:</li>
         <p>
             Le Druk, également connu sous le nom de dragon du tonnerre, est issu de la mythologie tibétaine et
             bhoutanaise
@@ -152,7 +137,7 @@
             signe et rebaptisa le monastère Drug Ralung, les disciples devenant connus sous le nom de Drugpa « ceux du
             tonnerre ».
         </p>
-        <li class="photos drag7">Le dragon africain:</li>
+        <li id="africain" class="photos drag7">Le dragon africain:</li>
         <p>
             Les dragons africains ne sont pas aussi connus que leurs homologues occidentaux ou asiatiques. En fait, ces
             dragons ont un aspect assez différent de notre représentation traditionnelle des dragons. La plupart des
@@ -176,7 +161,7 @@
             ne s'agissait en fait que de fausses histoires, à l'image du monstre du Loch Ness. Ces histoires furent très
             probablement alimentées par les ossements de dinosaures qui abondaient dans la région.
         </p>
-        <li class="photos drag8">le Gaasyendietha:</li>
+        <li id="gaas" class="photos drag8">le Gaasyendietha:</li>
         <p>
             Dans les premiers récits iroqouis et algonquins, les gens parlaient d'une race de dragons serpentins géants
             vivant dans le lac Ontario, les Sénécas étant convaincus de l'existence du Gaasyendietha, un serpent géant
@@ -192,7 +177,7 @@
             «
             dragon météorique« , et il est dit qu'il vole dans le ciel sur un chemin fait de feu.
         </p>
-        <li class="photos drag9">Le Quetzalcóatl:</li>
+        <li id="quetza" class="photos drag9">Le Quetzalcóatl:</li>
         <p>
             Avec un nom signifiant « serpent à plumes », le Quetzalcóatl est un dragon dont la physiologie combine les
             caractéristiques des oiseaux et des serpents à sonnettes. Il est l'un des dieux les plus vénérés de
@@ -210,7 +195,7 @@
             respecté
             que les grands prêtres aztèques incluaient son nom dans leur titre pour souligner leur rang.
         </p>
-        <li class="photos drag10">Le Vishap:</li>
+        <li id="vishap" class="photos drag10">Le Vishap:</li>
         <p>
             Serpent ailé issu de la mythologie arménienne, le Vishap est un dragon fortement associé à l'eau et se
             compose de parties du corps d'autres animaux. Lorsqu'ils montent aux cieux ou descendent sur terre, ils
@@ -230,27 +215,16 @@
             Le simple échantillon de dragons inclus dans cette liste montre que de nombreux dragons mythologiques ont en
             fait une plus grande affinité pour l'eau que pour le feu et sont plus étroitement liés aux serpents qu'aux
             lézards ou aux dinosaures.
-<br>
-            Tu veux en savoir plus sur les dragons ? <a href="colorOfDragons.html">Découvre les différentes couleurs de
-            dragons</a></p>
+            <br>
+            Tu veux en savoir plus sur les dragons ? <a href="colorOfDragons.php">Découvre les différentes couleurs de
+                dragons</a>
+        </p>
 
     </ol>
 
-    <footer class="footer">
-        <ul class="reseau">
-            <li class="reseau"><a href="" title="Suivez sur Facebook"
-                    target="_blank"><img class="icon" src="imgreseau/facebook.jpg"><span aria-hidden="true"></span></a></li>
-            <li class="reseau"><a href="" title="Suivez sur Instagram"
-                    target="_blank"><img class="icon" src="imgreseau/OIP.jpg"><span aria-hidden="true"></span></a></li>
-            <li class="reseau"><a href="" title="Suivez sur LinkedIn"
-                    target="_blank"><img class="icon" src="imgreseau/linkedin.jpg"><span aria-hidden="true"></span></a></li>
-            <li class="reseau"><a href="" title="Suivez sur Twitter"
-                    target="_blank"><img class="icon" src="imgreseau/twitter.jpg"><span aria-hidden="true"></span></a></li>
-            <li class="reseau"><a href="" title="Suivez sur Youtube"
-                    target="_blank"><img class="icon" src="imgreseau/youtube.jpg"><span aria-hidden="true"></span></a></li>
-        </ul>
-
-    </footer>
+    <?php
+    include_once 'footer.php'
+    ?>>
 
     <script src="fansite.js"></script>
 </body>
